@@ -743,12 +743,27 @@ img {
     padding: 8px;
     display: flex;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
     justify-content: center;
     align-items: center;
     fill: #2E2F42;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover {
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+}
+
+.close-btn:hover .close-icon {
+    fill: #FFFFFF;
 }
 
 .modal-title {
@@ -874,11 +889,11 @@ img {
 .checkbox-icon {
     display: flex;
     align-self: center;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 8px;
     opacity: 0;
     background-color: transparent;
-    background-image: url("../images/checkmark.svg");
+    background-image: url("../images/check.svg");
     background-size: contain;
     background-origin: border-box;
     transition-property: opacity;
