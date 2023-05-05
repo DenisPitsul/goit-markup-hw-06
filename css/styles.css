@@ -730,12 +730,9 @@ img {
     transform: translate(-50%, -50%) scale(0.9);
 }
 
-.close-btn-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .close-btn {
+    position: absolute;
+    right: 24px;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -764,6 +761,10 @@ img {
 
 .close-btn:hover .close-icon {
     fill: #FFFFFF;
+}
+
+.modal-body-container {
+    margin-top: 48px;
 }
 
 .modal-title {
@@ -848,9 +849,14 @@ img {
 .form-field-policy {
     position: relative;
     margin-top: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .form-label-checkbox {
+    position: absolute;
+    left: 0;
+    padding-left: 15px;
     display: flex;
     align-items: center;
 }

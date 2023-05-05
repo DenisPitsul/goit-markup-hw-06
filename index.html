@@ -376,13 +376,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <div class="close-btn-container">
-                <button class="close-btn" data-modal-close>
-                    <svg class="close-icon" width="8" height="8">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div>
+            <button class="close-btn" data-modal-close>
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
             <div class="modal-body-container">
                 <h3 class="modal-title">Leave your contacts and we will call you back</h3>
                 <form class="modal-form">
@@ -409,14 +407,14 @@
                     </div>
                     <div class="form-field">
                         <label class="form-label" for="comment">Comment</label>
-                        <textarea class="form-comment" name="comment" placeholder="Text input"></textarea>
+                        <textarea class="form-comment" name="comment" placeholder="Text input" id="comment"></textarea>
                     </div>
                     <div class="form-field-policy">
-                        <label class="form-label-checkbox">
-                            <input class="checkbox" type="checkbox" name="pocicy">
-                            <div class="checkbox-icon-container">
-                                <span class="checkbox-icon"></span>
-                            </div>
+                        <input class="checkbox" type="checkbox" name="pocicy" id="checkbox">
+                        <div class="checkbox-icon-container">
+                            <span class="checkbox-icon"></span>
+                        </div>
+                        <label class="form-label-checkbox" for="checkbox">
                             <span class="checkbox-text">I accept the terms and conditions of the <a class="privacy-policy-text" href="">Privacy Policy</a></span>
                         </label>
                     </div>
